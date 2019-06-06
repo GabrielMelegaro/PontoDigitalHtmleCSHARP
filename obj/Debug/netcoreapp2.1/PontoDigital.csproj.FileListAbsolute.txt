@@ -16,10 +16,7 @@ C:\Users\47218167829\Desktop\PontoDigital\bin\Debug\netcoreapp2.1\PontoDigital.d
 C:\Users\47218167829\Desktop\PontoDigital\bin\Debug\netcoreapp2.1\PontoDigital.pdb
 C:\Users\47218167829\Desktop\PontoDigital\bin\Debug\netcoreapp2.1\PontoDigital.Views.dll
 C:\Users\47218167829\Desktop\PontoDigital\bin\Debug\netcoreapp2.1\PontoDigital.Views.pdb
-C:\Users\47218167829\Desktop\PontoDigital\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
-C:\Users\47218167829\Desktop\PontoDigital\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
 C:\Users\47218167829\Desktop\PontoDigital\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
-C:\Users\47218167829\Desktop\PontoDigital\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
 C:\Users\47218167829\Desktop\PontoDigital\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
 C:\Users\47218167829\Desktop\PontoDigital\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
 C:\Users\47218167829\Desktop\PontoDigital\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
@@ -30,3 +27,5 @@ C:\Users\47218167829\Desktop\PontoDigital\obj\Debug\netcoreapp2.1\PontoDigital.R
 C:\Users\47218167829\Desktop\PontoDigital\obj\Debug\netcoreapp2.1\PontoDigital.RazorTargetAssemblyInfo.cs
 C:\Users\47218167829\Desktop\PontoDigital\obj\Debug\netcoreapp2.1\PontoDigital.Views.pdb
 C:\Users\47218167829\Desktop\PontoDigital\obj\Debug\netcoreapp2.1\PontoDigital.csproj.CopyComplete
+C:\Users\47218167829\Desktop\PontoDigital\obj\Debug\netcoreapp2.1\Razor\Views\Cadastro\Index.g.cshtml.cs
+C:\Users\47218167829\Desktop\PontoDigital\obj\Debug\netcoreapp2.1\Razor\Views\Cliente\Login.g.cshtml.cs

@@ -1,0 +1,38 @@
+<main>
+    <h2>@ViewData["NomeView"]</h2>
+    <form method="POST" action='@Url.Action("Cadastrar", "Cadastro")'>
+        <div>
+                <label for="nome">Nome Completo</label>
+                <br />
+                <input id="nome" type="text" maxlength="100" minlength="3" name="nome" />
+            </div>
+            
+            <div>
+                <label for="email">E-mail</label>
+                <br />
+                <input id="email" type="email" name="email"/>
+            </div>
+
+            <div>
+                <label for="data-nascimento">Data de Nascimento</label>
+                <br />
+                <input id="data-nascimento" type="date" name="data-nascimento"/>
+            </div>
+            
+            <div>
+                <label for="senha">Senha</label>
+                <br />
+                <input id="senha" type="password" name="senha"/>
+            </div>
+
+            <div>
+                <label for="confirmar-senha">Confirme sua Senha</label>
+                <br />
+                <input id="confirmar-senha" type="password" name="confirmar-senha"/>
+            </div>
+            
+            
+            
+            <input type="submit" value="Cadastrar!" />
+    </form>
+</main>
