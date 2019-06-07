@@ -59,7 +59,7 @@ using PontoDigital.Models;
             WriteLiteral("<!DOCTYPE html>\r\n<html>\r\n");
             EndContext();
             BeginContext(25, 330, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e7e54cd04ddc4a25afc55d679be2c262", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "22f8aecab1734af180b8e17c4c235a01", async() => {
                 BeginContext(31, 167, true);
                 WriteLiteral("\r\n    <meta charset=\"utf-8\" />\r\n    <link href=\"https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap\" rel=\"stylesheet\">\r\n    <title>Ponto Digital</title>\r\n");
                 EndContext();
@@ -72,7 +72,7 @@ using PontoDigital.Models;
                 WriteLiteral("        ");
                 EndContext();
                 BeginContext(262, 77, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "6308a0be01c74445ac22ec66c31ed9c3", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "22168ef97ff648a7963547ba4d2776a8", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -112,7 +112,7 @@ using PontoDigital.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(357, 373, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bfc38cb20d2f47e1b589251010b3ff1a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "495de081996947fdb85ee2a77ea1ae50", async() => {
                 BeginContext(386, 4, true);
                 WriteLiteral("\r\n\r\n");
                 EndContext();
