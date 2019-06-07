@@ -1,17 +1,17 @@
-@{
+'@{
     var user = (string) ViewData["User"];
 }
 <nav>
     <div class="section-container">
         <ul>
-            <li><a asp-controller="Home" asp-action="Index" class="active">Home</a></li>
-            <li><a href='@Url.Action("Index", "Home")#Sobre'>Sobre</a></li>
-            <li><a href='@Url.Action("Index", "Home")#Planos'>Planos</a></li>
-            <li><a href='@Url.Action("Index", "Home")#Produtos'>Produtos</a></li>
-            <li><a href='@Url.Action("Index", "Home")#Localização'>Localização</a></li>
-            <li><a href='@Url.Action("Index", "Home")#Depoimentos'>Depoimentos</a></li>
-            <li><a href='@Url.Action("Index", "Home")#Contatos'>Contatos</a></li>
-            <li><a href='@Url.Action("Index", "Home")#Login/Cadastro'>Login/Cadastro</a></li>
+            <li><a asp-controller="Home" asp-action="Index" class="active">Principal</a></li>
+            <li><a href='@Url.Action("Index", "Home")#sobre'>Sobre</a></li>
+            <li><a href='@Url.Action("Index", "Home")#planos'>Planos</a></li>
+            <li><a href='@Url.Action("Index", "Home")#produtos'>Produtos</a></li>
+            <li><a href='@Url.Action("Index", "Home")#localizacao'>Localização</a></li>
+            <li><a href='@Url.Action("Index", "Home")#depoimentos'>Depoimentos</a></li>
+            <li><a href='@Url.Action("Index", "Home")#contatos'>Contatos</a></li>
+            <li><a href='@Url.Action("Index", "Home")#login/cadastro'>Login/Cadastro</a></li>
             @if(string.IsNullOrEmpty(user))
             {
                 <li><a id="bt_login" asp-controller="Cliente" asp-action="Login">Login/Cadastro</a></li>

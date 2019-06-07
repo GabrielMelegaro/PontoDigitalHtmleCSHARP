@@ -1,18 +1,15 @@
+'@{
+    var user = (string) ViewData["User"];
+}
 @{
     ViewData["Title"] = "Registro - PontoDigital";
     ViewData["H2"] = "Login";
 }
-    <header>
-        <!-- <partial name="_HeaderNavBar"></partial> -->
-        @{
-            Html.RenderPartial("_HeaderNavBar", ViewData["User"]);
-        }
         <hgroup>
-            <h1>McBonald's</h1>
+            <h1>PontoDigital</h1>
         </hgroup>
-    </header>
-
-    <main>
+    
+    <main class="main_h2">
         <h2>@ViewData["H2"]</h2>
         <form method="POST" action='@Url.Action("Login", "Cliente")'>
             <div>

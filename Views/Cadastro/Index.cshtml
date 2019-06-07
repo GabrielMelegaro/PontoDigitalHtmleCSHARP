@@ -1,3 +1,6 @@
+@{
+    var user = (string) ViewData["User"];
+}
 <main>
     <h2>@ViewData["NomeView"]</h2>
     <form method="POST" action='@Url.Action("Cadastrar", "Cadastro")'>

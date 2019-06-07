@@ -29,3 +29,7 @@ C:\Users\47218167829\Desktop\PontoDigital\obj\Debug\netcoreapp2.1\PontoDigital.V
 C:\Users\47218167829\Desktop\PontoDigital\obj\Debug\netcoreapp2.1\PontoDigital.csproj.CopyComplete
 C:\Users\47218167829\Desktop\PontoDigital\obj\Debug\netcoreapp2.1\Razor\Views\Cadastro\Index.g.cshtml.cs
 C:\Users\47218167829\Desktop\PontoDigital\obj\Debug\netcoreapp2.1\Razor\Views\Cliente\Login.g.cshtml.cs
+C:\Users\47218167829\Desktop\PontoDigital\obj\Debug\netcoreapp2.1\Razor\Views\Cliente\Historico.g.cshtml.cs
+C:\Users\47218167829\Desktop\PontoDigital\obj\Debug\netcoreapp2.1\Razor\Views\Registro\Index.g.cshtml.cs
+C:\Users\47218167829\Desktop\PontoDigital\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Sucesso.g.cshtml.cs
+C:\Users\47218167829\Desktop\PontoDigital\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Falha.g.cshtml.cs

@@ -1,0 +1,31 @@
+@model PontoDigital.ViewModels.RegistroViewModel
+'@{
+    var user = (string) ViewData["User"];
+}
+<header>
+</header>
+<main>
+        <h2>Registre@Model.Cliente.NomeCompleto!</h2>
+        <form method="POST" action="Registro/CadastrarRegistro">
+            <div>
+                <label for="nome">Nome Completo</label>
+                <br />
+                <input id="nome" type="text" maxlength="100" minlength="3" name="nome" value="@Model.Cliente.NomeCompleto"/>
+            </div>
+
+            <div>
+                <label for="email">E-mail</label>
+                <br />
+                <input id="email" type="email" name="email" value="@Model.Cliente.Email"/>
+            </div>
+
+            <div>
+                <label for="senha">Senha</label>
+                <br />
+                <input id="senha" type="password" name="email" value="@Model.Cliente.Senha"/>
+            </div>
+
+            <input type="submit" value="Finalizar registro!" />
+        </form>
+
+    </main>

@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿'@{
+    var user = (string) ViewData["User"];
+}
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8"/>
@@ -10,14 +13,19 @@
         <div class="conteudo_topo content">
             <nav class="menu" id="menu_principal">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#Sobre">Sobre</a></li>
-                    <li><a href="index.html#Planos">Planos</a></li>
-                    <li><a href="index.html#Produtos">Produtos</a></li>
-                    <li><a href="index.html#Localização">Localização</a></li>
-                    <li><a href="index.html#Depoimentos">Depoimentos</a></li>
-                    <li><a href="index.html#Contato">Contatos</a></li>
-                    <li><a href="index.html#Login/Cadastro">Login/Cadastro</a></li>
+                    <li><a asp-controller="Home" asp-action="Index" class="active">Home</a></li>
+                    <li><a href='@Url.Action("Index", "Home")#sobre'>Sobre</a></li>
+                    <li><a href='@Url.Action("Index", "Home")#Planos'>Planos</a></li>
+                    <li><a href='@Url.Action("Index", "Home")#Produtos'>Produtos</a></li>
+                    <li><a href='@Url.Action("Index", "Home")#Localização'>Localização</a></li>
+                    <li><a href='@Url.Action("Index", "Home")#Depoimentos'>Depoimentos</a></li>
+                    <li><a href='@Url.Action("Index", "Home")#contatos'>Contatos</a></li>
+                    @if(string.IsNullOrEmpty(user))
+                    {
+                    <li><a id="bt_login" asp-controller="Cliente" asp-action="Login">Login/Cadastro</a></li>
+                    }else{
+                    <li><a id="bt_logout" asp-controller="Cliente" asp-action="Logout">Logout</a></li>
+                    }
                 </ul>
             </nav>    
             <span id="btn_menu" onclick="botao_menu()">M</span>

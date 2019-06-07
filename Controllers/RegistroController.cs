@@ -12,6 +12,7 @@ namespace PontoDigital.Controllers
         private const string SESSION_CLIENTE = "CLIENTE";
         private ClienteRepositorio clienteRepositorio = new ClienteRepositorio();
         private RegistroRepositorio Repositorio = new RegistroRepositorio();
+        private PlanosRepositorio planosRepositorio = new PlanosRepositorio();
         [HttpGet]
         public IActionResult Index(){
             var cliente = clienteRepositorio.ObterPor(HttpContext.Session.GetString(SESSION_EMAIL));
