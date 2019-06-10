@@ -21,7 +21,7 @@ namespace PontoDigital.Controllers
 
             if(cliente != null && cliente.Senha.Equals(senha)){
                 HttpContext.Session.SetString(SESSION_EMAIL, usuario);
-                HttpContext.Session.SetString(SESSION_CLIENTE, cliente.NomeCompleto);
+                HttpContext.Session.SetString(SESSION_CLIENTE, cliente.Nome);
             }
 
             return RedirectToAction("Index" ,"Home");

@@ -16,7 +16,7 @@ namespace PontoDigital.Repositorio
                //Codigo de criação do arquivo
                File.Create(PATH).Close();
            }
-           var cadastro = $"{cadastrar.Id};{cadastrar.Cliente.NomeCompleto};{cadastrar.Cliente.Email};{cadastrar.Cliente.Senha};{cadastrar.DataNascimento}\n";
+           var cadastro = $"{cadastrar.Id};{cadastrar.Cliente.Nome};{cadastrar.Cliente.Email};{cadastrar.Cliente.Senha};{cadastrar.DataNascimento}\n";
                //Codigo de gravação
            File.AppendAllText(PATH,cadastro);
            }catch(Exception e){

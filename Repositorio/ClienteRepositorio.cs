@@ -122,7 +122,7 @@ namespace PontoDigital.Repositorio
             ClienteModel cliente = new ClienteModel();
             System.Console.WriteLine("REGISTRO:" + registro);
             cliente.Id = ulong.Parse(ExtrairCampo("id", registro));
-            cliente.NomeCompleto = ExtrairCampo("nome", registro);
+            cliente.Nome = ExtrairCampo("nome", registro);
             cliente.Email = ExtrairCampo("email", registro);
             cliente.Senha = ExtrairCampo("senha", registro);
             cliente.DataNascimento = DateTime.Parse(ExtrairCampo("data_nascimento", registro));
@@ -131,7 +131,7 @@ namespace PontoDigital.Repositorio
         }
 
         private string PrepararRegistroCSV (ClienteModel cliente) {
-            return $"id={CONT};nome={cliente.NomeCompleto};email={cliente.Email};senha={cliente.Senha};data_nascimento={cliente.DataNascimento}\n";
+            return $"id={CONT};nome={cliente.Nome};email={cliente.Email};senha={cliente.Senha};data_nascimento={cliente.DataNascimento}\n";
         }
     }
 }

@@ -1,0 +1,28 @@
+@model PontoDigital.ViewModels.HomeViewModel;
+@{
+    Layout="_Layout";
+}
+<h1>PontoDigital</h1>
+<form action="Home/RegistrarDepoimentos" method="POST">
+    <label for="name">Nome</label>
+    <input type="text" name="nome">
+
+    <label for="sobrenome">Sobrenome</label>
+    <select name="sobrenome">
+        @foreach(var item in Model.Depoimentos){
+            <option value="@item.Nome">@item.Nome</option>
+        }
+    </select>
+        
+    <label for="email">Email</label>
+    <select name="email">
+        @foreach (var item in Model.Depoimentos){
+            <option value="@item.Nome">@item.Nome</option>
+        }
+    </select>
+
+    <label for="mensagem">Mensagem</label>
+    <input type="text" name="mensagem">
+
+    <input type="submit" value="Registrar">
+</form>

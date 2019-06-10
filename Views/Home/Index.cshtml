@@ -28,7 +28,6 @@
                     }
                 </ul>
             </nav>    
-            <span id="btn_menu" onclick="botao_menu()">M</span>
         </div>
     </header>
     <section id="banner">
@@ -157,10 +156,10 @@
         <section id="Depoimentos">
             <h2>Depoimentos</h2>
             <div class="conteudo_Depor_container">
-            <form method="GET" action="index.html">
+            <form method="POST" action="Home/RegistrarDepoimentos">
                 <label for="nome">Nome:</label>
                 <br />
-                <input id="nome" type="text" maxlength="50" minlength="1" required/>
+                <input id="nome" type="name" maxlength="50" minlength="1" required/>
                 <br />
 
                 <label for="sobrenome">Sobrenome:</label>
@@ -170,7 +169,7 @@
 
                 <label for="email">Email:</label>
                 <br />
-                <input id="nome" id="email" type="email" required/>
+                <input id="email" type="email" required/>
                 <br />
 
                 <label for="mensagem">Mensagem:</label>  

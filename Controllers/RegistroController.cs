@@ -33,7 +33,7 @@ namespace PontoDigital.Controllers
             RegistroModel registro = new RegistroModel();
 
             ClienteModel cliente = new ClienteModel();
-            cliente.NomeCompleto = form["nome"];
+            cliente.Nome = form["nome"];
             cliente.Email = form["email"];
 
             registro.Cliente = cliente;

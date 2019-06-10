@@ -16,7 +16,7 @@ namespace PontoDigital.Controllers
 
         public IActionResult Cadastrar(IFormCollection form){
             ClienteModel cliente = new ClienteModel();
-            cliente.NomeCompleto = form["nome"];
+            cliente.Nome = form["nome"];
             cliente.Email = form["email"];
             cliente.Senha = form["senha"];
             cliente.DataNascimento = DateTime.Parse(form["data-nascimento"]);
