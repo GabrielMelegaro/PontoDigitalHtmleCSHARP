@@ -36,3 +36,4 @@ C:\Users\47218167829\Desktop\PontoDigital\obj\Debug\netcoreapp2.1\Razor\Views\Sh
 C:\Users\47218167829\Desktop\PontoDigital\obj\Debug\netcoreapp2.1\Razor\Views\Depoimentos\BuscarDepoimentos.g.cshtml.cs
 C:\Users\47218167829\Desktop\PontoDigital\obj\Debug\netcoreapp2.1\Razor\Views\Depoimentos\Index.g.cshtml.cs
 C:\Users\47218167829\Desktop\PontoDigital\obj\Debug\netcoreapp2.1\Razor\Views\Depoimentos\ListarDepoimentos.g.cshtml.cs
+C:\Users\47218167829\Desktop\PontoDigital\obj\Debug\netcoreapp2.1\Razor\Views\Registro\ListarRegistros.g.cshtml.cs

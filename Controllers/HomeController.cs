@@ -15,8 +15,7 @@ namespace PontoDigital.Controllers
     {
         private const string SESSION_EMAIL = "_EMAIL";
         private const string SESSION_CLIENTE = "_CLIENTE";
-        SobrenomeRepositorio sobrenomesRepositorio = new SobrenomeRepositorio();
-        EmailRepositorio emailsRepositorio = new EmailRepositorio();
+        ClienteRepositorio clienteRepositorio = new ClienteRepositorio();
         DepoimentoRepositorio depoimentosRepositorio = new DepoimentoRepositorio();
         HomeViewModel homeViewModel = new HomeViewModel();
             [HttpGet]
@@ -24,12 +23,6 @@ namespace PontoDigital.Controllers
         {
             ViewData["User"] = HttpContext.Session.GetString(SESSION_EMAIL);
             ViewData["NomeView"] = "Home";
-
-            var listaDeSobrenome = sobrenomesRepositorio.ListarSobrenomes();
-            var listaDeEmails = emailsRepositorio.ListarEmails();
-
-            homeViewModel.Sobrenomes = listaDeSobrenome;
-            homeViewModel.Emails = listaDeEmails ;
 
             return View(homeViewModel);
         }
@@ -40,39 +33,26 @@ namespace PontoDigital.Controllers
             depoimentos.Email = form["email"];
             depoimentos.Sobrenome = form["sobrenome"];
             depoimentos.Mensagem = form["mensagem"];
+            depoimentos.DataEntrada = DateTime.Now;
 
             depoimentosRepositorio.RegistrarNoCSV(depoimentos);
 
             return RedirectToAction("Index","Home");
         }
 
-        public IActionResult ListarRegistros(){
-            homeViewModel.Emails = emailsRepositorio.ListarEmails();
+        public IActionResult ListarDepoimentos(){
+            homeViewModel.Cliente = clienteRepositorio.ListarTodos();
             homeViewModel.Depoimentos = depoimentosRepositorio.Listar();
-
-            return View(homeViewModel);
+            return View();
         } 
 
-        public IActionResult BuscarRegistros(IFormCollection form){
-            string email = form["email"];
-            string dataForm = form["data"];
-            DateTime data;
-
-            if(string.IsNullOrEmpty(email) && string.IsNullOrEmpty(dataForm)){
-                return RedirectToAction("ListarDepoimentos");
-            }else if(string.IsNullOrEmpty(email)){
-                data = DateTime.Parse(dataForm);
-                homeViewModel.Depoimentos = depoimentosRepositorio.Filtrar(data);
-            }else if(string.IsNullOrEmpty(dataForm)){
-                homeViewModel.Depoimentos = depoimentosRepositorio.Filtrar(email);
-            }else{
-                data = DateTime.Parse(dataForm);
-                homeViewModel.Depoimentos = depoimentosRepositorio.Filtrar(data, email);
-            }
+        public IActionResult BuscarDepoimentos(IFormCollection form){
+            DepoimentoModel depoimento = new DepoimentoModel();
+            depoimento.Nome = form["nome"];
+            depoimento.Email = form["email"];
+            depoimento.Mensagem = form["mensagem"];
             
-            homeViewModel.Emails = emailsRepositorio.ListarEmails();
-            
-            return View(homeViewModel);
+            return RedirectToAction("ListarDepoimentos");
         }
     }
 }

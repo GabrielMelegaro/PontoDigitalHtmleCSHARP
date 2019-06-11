@@ -7,12 +7,6 @@
     <label for="data">Data:</label>
     <input type="date" name="data">
 
-    <label for="nome">Nome:</label>
-    <select type="text" name="nome">      
-        @foreach (var item in Model.Depoimentos){
-            <option value="@item.Nome">@item.Nome</option>
-        }
-    </select>
     <input type="submit" value="Filtrar">
 </form>
 
@@ -29,7 +23,7 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in Model.Depoimentos){
+        @foreach(var item in Model.Depoimentos){
             @if(item == null){
                 continue;
             }
