@@ -8,6 +8,8 @@ namespace PontoDigital.Repositorio
     public class DepoimentoRepositorio
     {
         private const string PATH = "Database/Depoimentos.csv";
+        private const string PATH_APROVADO = "Database/Depoimentos_Aprovados.csv";
+        private const string PATH_REPROVADO = "Database/Depoimentos_Reprovados.csv";
         public void RegistrarNoCSV(DepoimentoModel depoimento){
             if(File.Exists(PATH)){
                 depoimento.Id = File.ReadAllLines(PATH).Length + 1;
@@ -16,7 +18,7 @@ namespace PontoDigital.Repositorio
             }
             StreamWriter sw = new StreamWriter(PATH, true);
 
-            sw.WriteLine($"{depoimento.Id};{depoimento.Nome};{depoimento.Sobrenome};{depoimento.Email};{depoimento.Mensagem};{DateTime.Now}");
+            sw.WriteLine($"{depoimento.Id};{depoimento.Nome};{depoimento.Sobrenome};{depoimento.Email};{depoimento.Mensagem};{DateTime.Now}\n");
             sw.Close();
         }
 

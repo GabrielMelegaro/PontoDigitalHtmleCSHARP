@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -6,17 +7,19 @@ using PontoDigital.Repositorio;
 
 namespace PontoDigital.Controllers
 {
-    public class ClienteController : Controller
+    public class AdminController : Controller
     {
         private ClienteRepositorio clienteRepositorio = new ClienteRepositorio();
+        private AdminRepositorio adminRepositorio = new AdminRepositorio();
         private const string SESSION_EMAIL = "_EMAIL";
         private const string SESSION_CLIENTE = "_CLIENTE";
         [HttpGet]
-        public IActionResult Login(){
+        public IActionResult LoginAdmin(){
             return View();
         }
+        
         [HttpPost]
-        public IActionResult Login(IFormCollection form){
+        public IActionResult Logar(IFormCollection form){
             var email = form["email"];
             var senha = form["senha"];
             List<ClienteModel> listaClientes = clienteRepositorio.ListarTodos();
@@ -28,7 +31,7 @@ namespace PontoDigital.Controllers
                 //    System.Console.WriteLine("ta nulo CARAMBA");
                 // }
 
-                if (email.Equals(item.Email) && senha.Equals(item.Senha))
+                if ( email.Equals(item.Email) && senha.Equals(item.Senha))
                 {
                     //Criar Sessions                    
                     HttpContext.Session.SetString(SESSION_EMAIL, item.Email);
@@ -45,14 +48,6 @@ namespace PontoDigital.Controllers
             }
             ViewData["ErroData"] = "ErroLogin";
             return View("Index");
-        }
-
-        public IActionResult Logout(){
-            HttpContext.Session.Remove(SESSION_EMAIL);
-            HttpContext.Session.Remove(SESSION_CLIENTE);
-            HttpContext.Session.Clear();
-
-            return RedirectToAction("Index", "Home");
         }
     }
 }

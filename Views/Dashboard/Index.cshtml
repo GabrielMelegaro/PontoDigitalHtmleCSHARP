@@ -23,7 +23,9 @@
                     @if(string.IsNullOrEmpty(user))
                     {
                     <li><a id="bt_login" asp-controller="Cliente" asp-action="Login">Login/Cadastro</a></li>
-                    }else{
+                    }
+                    else
+                    {
                     <li><a id="bt_logout" asp-controller="Cliente" asp-action="Logout">Logout</a></li>
                     }
                 </ul>
@@ -52,8 +54,10 @@
         </tr>
     </thead>
     <tbody>
-        @foreach(var item in Model.Depoimentos){
-            @if(item == null){
+        @foreach(var item in Model.Depoimentos)
+        {
+            @if(item == null)
+            {
                 continue;
             }
         <tr class="tbody-form">

@@ -1,15 +1,35 @@
+@{
+    var user = (string) ViewData["User"];
+}
 <head>
      <link href="~/css/style-registros-flex.css" rel="stylesheet" type="text/css">
+     <link href="~/css/style-navbar-flex.css" rel="stylesheet" type="text/css">
 </head>
-
     <header>
-        <hgroup>
-            <h1></h1>
-        </hgroup>
+        <header class="topo container">
+        <div class="conteudo_topo content">
+            <nav class="menu" id="menu_principal">
+                <ul>
+                    <li><a asp-controller="Home" asp-action="Index" class="active">Home</a></li>
+                    <li><a href='@Url.Action("Index", "Home")#sobre'>Sobre</a></li>
+                    <li><a href='@Url.Action("Index", "Home")#Planos'>Planos</a></li>
+                    <li><a href='@Url.Action("Index", "Home")#Produtos'>Produtos</a></li>
+                    <li><a href='@Url.Action("Index", "Home")#Localização'>Localização</a></li>
+                    <li><a href='@Url.Action("Index", "Home")#Depoimentos'>Depoimentos</a></li>
+                    <li><a href='@Url.Action("Index", "Home")#contatos'>Contatos</a></li>
+                    @if(string.IsNullOrEmpty(user))
+                    {
+                    <li><a id="bt_login" asp-controller="Cliente" asp-action="Login">Login/Cadastro</a></li>
+                    }else{
+                    <li><a id="bt_logout" asp-controller="Cliente" asp-action="Logout">Logout</a></li>
+                    }
+                </ul>
+            </nav>    
+        </div>
     </header>
-
-    <main>
-        <h2>@ViewData["Action"] efetuado com sucesso!</h2>
+    <main class="main-success">
+        <h1>@ViewData["Action"] efetuado com sucesso!</h1>
+            <h4>*Feche o site e abra-o de novo!!</h4>
     </main>
 
 

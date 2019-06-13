@@ -57,7 +57,7 @@ using PontoDigital.Models;
             WriteLiteral("<h1>PontoDigital</h1>\r\n");
             EndContext();
             BeginContext(70, 698, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2878cc686ec24bb9bf06ee556a5a3ed3", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e8bc8b23b71349d6b94b8baddc830db2", async() => {
                 BeginContext(125, 154, true);
                 WriteLiteral("\r\n    <label for=\"name\">Nome</label>\r\n    <input type=\"text\" name=\"nome\">\r\n\r\n    <label for=\"sobrenome\">Sobrenome</label>\r\n    <select name=\"sobrenome\">\r\n");
                 EndContext();
@@ -70,7 +70,7 @@ using PontoDigital.Models;
                 WriteLiteral("            ");
                 EndContext();
                 BeginContext(341, 46, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "81ed064b266f4b1f8ba94f3bbb939184", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "40be9802e7e04093897a9712816e38c3", async() => {
                     BeginContext(369, 9, false);
 #line 10 "C:\Users\47218167829\Desktop\PontoDigital\Views\Depoimentos\Index.cshtml"
                                   Write(item.Nome);
@@ -119,7 +119,7 @@ using PontoDigital.Models;
                 WriteLiteral("            ");
                 EndContext();
                 BeginContext(553, 46, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9e0dec6f0c6042beb194375d7ac0e9a1", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e1ef1809458840848437195c50e60089", async() => {
                     BeginContext(581, 9, false);
 #line 17 "C:\Users\47218167829\Desktop\PontoDigital\Views\Depoimentos\Index.cshtml"
                                   Write(item.Nome);

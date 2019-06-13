@@ -30,8 +30,8 @@ namespace PontoDigital.Controllers
         public IActionResult RegistrarDepoimentos(IFormCollection form){
             DepoimentoModel depoimentos = new DepoimentoModel();
             depoimentos.Nome = form["nome"];
-            depoimentos.Email = form["email"];
             depoimentos.Sobrenome = form["sobrenome"];
+            depoimentos.Email = form["email"];
             depoimentos.Mensagem = form["mensagem"];
             depoimentos.DataEntrada = DateTime.Now;
 
@@ -43,16 +43,22 @@ namespace PontoDigital.Controllers
         public IActionResult ListarDepoimentos(){
             homeViewModel.Cliente = clienteRepositorio.ListarTodos();
             homeViewModel.Depoimentos = depoimentosRepositorio.Listar();
-            return View();
+            return View(homeViewModel);
         } 
 
         public IActionResult BuscarDepoimentos(IFormCollection form){
-            DepoimentoModel depoimento = new DepoimentoModel();
-            depoimento.Nome = form["nome"];
-            depoimento.Email = form["email"];
-            depoimento.Mensagem = form["mensagem"];
-            
-            return RedirectToAction("ListarDepoimentos");
+            string dataForm = form["data"];
+            DateTime data;
+            if ( string.IsNullOrEmpty(dataForm))
+            {
+                return RedirectToAction("ListarDepoimentos");
+            }else if(string.IsNullOrEmpty(dataForm)){
+               data = DateTime.Parse(dataForm);
+               homeViewModel.Depoimentos = depoimentosRepositorio.Filtrar(data);
+            }
+            homeViewModel.Depoimentos = depoimentosRepositorio.Listar();
+
+            return View(homeViewModel);
         }
     }
 }

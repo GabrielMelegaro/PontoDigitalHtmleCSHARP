@@ -7,5 +7,6 @@ namespace PontoDigital.ViewModels
     {
         public List<DepoimentoModel> Depoimentos{get;set;}
         public List<ClienteModel> Cliente {get;set;}
+        public List<AdminModel> Admin {get;set;}
     }
 }
