@@ -20,9 +20,12 @@
                     <li><a href='@Url.Action("Index", "Home")#Localização'>Localização</a></li>
                     <li><a href='@Url.Action("Index", "Home")#Depoimentos'>Depoimentos</a></li>
                     <li><a href='@Url.Action("Index", "Home")#contatos'>Contatos</a></li>
-                    @if(string.IsNullOrEmpty(user)){
+                    @if(string.IsNullOrEmpty(user))
+                    {
                     <li><a id="bt_login" asp-controller="Cliente" asp-action="Login">Login/Cadastro</a></li>
-                    }else{
+                    }
+                    else
+                    {
                     <li><a id="bt_logout" asp-controller="Cliente" asp-action="Logout">Logout</a></li>
                     }
                 </ul>
@@ -30,7 +33,7 @@
         </div>
     </header>
 
-<h2>Registro de Depoimentos</h2>
+<h2>Comentarios Reprovados</h2>
 
 <form action='@Url.Action("BuscarDepoimentos","Home")' method="POST">
     <label for="data">Data:</label>
@@ -51,8 +54,10 @@
         </tr>
     </thead>
     <tbody>
-        @foreach(var item in Model.Depoimentos){
-            @if(item == null){
+        @foreach(var item in Model.Depoimentos)
+        {
+            @if(item == null)
+            {
                 continue;
             }
         <tr class="tbody-form">

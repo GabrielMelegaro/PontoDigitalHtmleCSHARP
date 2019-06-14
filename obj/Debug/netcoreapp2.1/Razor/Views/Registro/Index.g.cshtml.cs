@@ -65,7 +65,7 @@ using PontoDigital.Models;
             WriteLiteral("<header>\r\n</header>\r\n<main>\r\n        <h2>Registre@Model.Cliente.Nome!</h2>\r\n        ");
             EndContext();
             BeginContext(185, 796, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2537d5dc57d148f0b940779b81266ab4", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e3283dc9556b4ecca2a5df8de3eb061f", async() => {
                 BeginContext(241, 188, true);
                 WriteLiteral("\r\n            <div>\r\n                <label for=\"nome\">Nome Completo</label>\r\n                <br />\r\n                <input id=\"nome\" type=\"text\" maxlength=\"100\" minlength=\"3\" name=\"nome\"");
                 EndContext();

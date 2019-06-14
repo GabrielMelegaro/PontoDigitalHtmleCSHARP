@@ -61,31 +61,5 @@ namespace PontoDigital.Repositorio
             }//fim foreach
             return listaFiltrada;
         }
-        public List<DepoimentoModel> Filtrar(string nome){
-            List<DepoimentoModel> listaFiltrada = new List<DepoimentoModel>();
-            List<DepoimentoModel> listaDeRegistros = Listar();
-
-            foreach (var item in listaDeRegistros){
-                if (item.Nome.Equals(nome)){
-                    listaFiltrada.Add(item);
-                }else{
-                    continue;
-                }
-            }//fim foreach
-            return listaFiltrada;
-        }
-        public List<DepoimentoModel> Filtrar(DateTime data, string nome){
-            List<DepoimentoModel> listaFiltrada = new List<DepoimentoModel>();
-            List<DepoimentoModel> listaDeRegistros = Listar();
-
-            foreach (var item in listaDeRegistros){
-                if (item.Nome.Equals(nome) && item.DataEntrada.ToShortDateString() == data.ToShortDateString()){
-                    listaFiltrada.Add(item);
-                }else{
-                    continue;
-                }
-            }//fim foreach
-            return listaFiltrada;
-        }
     }
 }

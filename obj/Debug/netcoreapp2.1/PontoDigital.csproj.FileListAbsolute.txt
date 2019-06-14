@@ -37,3 +37,5 @@ C:\Users\47218167829\Desktop\PontoDigital\obj\Debug\netcoreapp2.1\Razor\Views\De
 C:\Users\47218167829\Desktop\PontoDigital\obj\Debug\netcoreapp2.1\Razor\Views\Home\ListarDepoimentos.g.cshtml.cs
 C:\Users\47218167829\Desktop\PontoDigital\obj\Debug\netcoreapp2.1\Razor\Views\Home\BuscarDepoimentos.g.cshtml.cs
 C:\Users\47218167829\Desktop\PontoDigital\obj\Debug\netcoreapp2.1\Razor\Views\Dashboard\Index.g.cshtml.cs
+C:\Users\47218167829\Desktop\PontoDigital\obj\Debug\netcoreapp2.1\Razor\Views\Dashboard\ListarAprovados.g.cshtml.cs
+C:\Users\47218167829\Desktop\PontoDigital\obj\Debug\netcoreapp2.1\Razor\Views\Dashboard\ListarReprovados.g.cshtml.cs

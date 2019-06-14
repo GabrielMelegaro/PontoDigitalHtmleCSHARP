@@ -52,13 +52,28 @@ namespace PontoDigital.Controllers
             if ( string.IsNullOrEmpty(dataForm))
             {
                 return RedirectToAction("ListarDepoimentos");
-            }else if(string.IsNullOrEmpty(dataForm)){
+            }else{
                data = DateTime.Parse(dataForm);
                homeViewModel.Depoimentos = depoimentosRepositorio.Filtrar(data);
+                 return View(homeViewModel);
+
             }
             homeViewModel.Depoimentos = depoimentosRepositorio.Listar();
 
             return View(homeViewModel);
+        }
+
+        public IActionResult ListarAprovados(IFormCollection form){
+            DepoimentoModel depoimentosAprovados = new DepoimentoModel();
+            depoimentosAprovados.Nome = form["nome"];
+            depoimentosAprovados.Sobrenome = form["sobrenome"];
+            depoimentosAprovados.Email = form["email"];
+            depoimentosAprovados.Mensagem = form["mensagem"];
+            depoimentosAprovados.DataEntrada = DateTime.Now;
+
+            depoimentosRepositorio.RegistrarNoCSV(depoimentosAprovados);
+
+            return RedirectToAction("Index","Dashboard");
         }
     }
 }

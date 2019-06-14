@@ -10,5 +10,6 @@ namespace PontoDigital.Models
         public string Email {get;set;}
         public string Mensagem {get;set;}
         public DateTime DataEntrada{get;set;}
+        public string Botao {get;set;}
     }
 }

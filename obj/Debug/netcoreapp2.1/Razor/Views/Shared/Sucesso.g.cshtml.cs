@@ -70,12 +70,12 @@ using PontoDigital.Models;
 #line default
 #line hidden
             BeginContext(50, 180, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ad77575e9ff749d1808467e4249b86d2", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f111837f9cf340aab9a3dec26bf14e94", async() => {
                 BeginContext(56, 7, true);
                 WriteLiteral("\r\n     ");
                 EndContext();
                 BeginContext(63, 77, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "11f42b94c9454ccbb1e42b26c03c9284", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ba7457cb0ee545979451f4486007b164", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -95,7 +95,7 @@ using PontoDigital.Models;
                 WriteLiteral("\r\n     ");
                 EndContext();
                 BeginContext(147, 74, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "482369dd9e1a42faa00334dca1d997ba", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "0e7ea0dbf6f343cfa2ba799ab3d74860", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -130,7 +130,7 @@ using PontoDigital.Models;
             WriteLiteral("\r\n    <header>\r\n        <header class=\"topo container\">\r\n        <div class=\"conteudo_topo content\">\r\n            <nav class=\"menu\" id=\"menu_principal\">\r\n                <ul>\r\n                    <li>");
             EndContext();
             BeginContext(430, 67, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "effc4b8568be4962b69c781dc107ad8f", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "079d6e0df9b8420ba5d371a20fe17094", async() => {
                 BeginContext(489, 4, true);
                 WriteLiteral("Home");
                 EndContext();
@@ -230,7 +230,7 @@ WriteAttributeValue("", 994, Url.Action("Index", "Home"), 994, 28, false);
             WriteLiteral("                    <li>");
             EndContext();
             BeginContext(1152, 79, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "da4edee2ef5a4498ac0af5e25ad2ae2b", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3d6751250f534223b07314f7fb236776", async() => {
                 BeginContext(1213, 14, true);
                 WriteLiteral("Login/Cadastro");
                 EndContext();
@@ -263,7 +263,7 @@ WriteAttributeValue("", 994, Url.Action("Index", "Home"), 994, 28, false);
             WriteLiteral("                    <li>");
             EndContext();
             BeginContext(1290, 73, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8989b24b68c343aebad296c20caa44f0", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "65dd6ff0563146ab9bb9d5670f6f3f2d", async() => {
                 BeginContext(1353, 6, true);
                 WriteLiteral("Logout");
                 EndContext();
