@@ -37,7 +37,7 @@ namespace PontoDigital.Controllers
 
             depoimentosRepositorio.RegistrarNoCSV(depoimentos);
 
-            return RedirectToAction("Index","Home");
+            return RedirectToAction("ListarDepoimentos","Home");
         }
 
         public IActionResult ListarDepoimentos(){

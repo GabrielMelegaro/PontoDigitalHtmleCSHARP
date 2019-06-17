@@ -78,12 +78,12 @@ using PontoDigital.Models;
 #line default
 #line hidden
             BeginContext(126, 95, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ad74bc1851ac4be4827ebbc679423e18", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c8b46e8a990b4d0988f4a66b3eb31afb", async() => {
                 BeginContext(132, 6, true);
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(138, 74, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "02827f2bb6f249dc9f9ad62034231ba8", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "440c79e282bd403f9dc4a9a0a21b615a", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -118,7 +118,7 @@ using PontoDigital.Models;
             WriteLiteral("\r\n<header>\r\n        <header class=\"topo container\">\r\n        <div class=\"conteudo_topo content\">\r\n            <nav class=\"menu\" id=\"menu_principal\">\r\n                <ul>\r\n                    <li>");
             EndContext();
             BeginContext(417, 67, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0674a847a8414c969e643978dcb78f6b", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c3194ef902af43afa934d559536c5388", async() => {
                 BeginContext(476, 4, true);
                 WriteLiteral("Home");
                 EndContext();
@@ -218,7 +218,7 @@ WriteAttributeValue("", 981, Url.Action("Index", "Home"), 981, 28, false);
             WriteLiteral("                    <li>");
             EndContext();
             BeginContext(1139, 79, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fad2027afba449038af293d4725ff8b8", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c260f32a55c54a2aa696deb846e8d1df", async() => {
                 BeginContext(1200, 14, true);
                 WriteLiteral("Login/Cadastro");
                 EndContext();
@@ -253,7 +253,7 @@ WriteAttributeValue("", 981, Url.Action("Index", "Home"), 981, 28, false);
             WriteLiteral("                    <li>");
             EndContext();
             BeginContext(1321, 73, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "588c6b7b8a7a4a83b2127f2ac4df76d1", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "10a9392f0bd544ac89c560ed7928e567", async() => {
                 BeginContext(1384, 6, true);
                 WriteLiteral("Logout");
                 EndContext();
@@ -286,7 +286,7 @@ WriteAttributeValue("", 981, Url.Action("Index", "Home"), 981, 28, false);
             WriteLiteral("                </ul>\r\n            </nav>    \r\n        </div>\r\n    </header>\r\n\r\n<h2>Registro de Depoimentos</h2>\r\n\r\n");
             EndContext();
             BeginContext(1540, 190, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cc3e2adc33534da489bbf5775f889bca", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a2d7c259be3f4deaa099028d6885b9d2", async() => {
                 BeginContext(1602, 121, true);
                 WriteLiteral("\r\n    <label for=\"data\">Data:</label>\r\n    <input type=\"date\" name=\"data\">\r\n\r\n    <input type=\"submit\" value=\"Filtrar\">\r\n");
                 EndContext();
